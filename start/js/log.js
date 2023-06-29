@@ -28,12 +28,7 @@ function init() {
 }
 
 function getOutput(output) {
-    const returnValue = ["The function starts"];
-    for(let i = 0; i < output.length; i++){
-        returnValue.push(output[i]);
-    }
-    returnValue.push("The function ends");
-    return returnValue;
+    return ["The function starts", ...output, "The function ends" ]
 }
 
 function logResult(place, values){
